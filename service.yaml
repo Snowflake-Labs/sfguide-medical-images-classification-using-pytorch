@@ -1,0 +1,21 @@
+spec:
+    containers:
+    - name: {{ env.IMAGE_NAME}}
+      image: /dicom_db/dicom_Schema/dicom_repo/image_name/pneumonia_rapids_service
+      volumeMounts:
+      - name: dshm
+        mountPath: /dev/shm
+      - name: stage
+        mountPath: /workspace/stage
+      resources:
+        requests:
+          nvidia.com/gpu: 1
+          cpu: 500m
+        limits:
+          nvidia.com/gpu: 1
+    volumes:
+    - name: "dshm"
+      source: "memory"
+      size: "25Gi"
+    - name: stage
+      source: "@public.model_stage"
