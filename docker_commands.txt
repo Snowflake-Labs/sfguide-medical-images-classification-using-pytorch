@@ -1,0 +1,3 @@
+!docker login {copied_image_repo_url} -u {config['_SECRETS_']['user']}  -p "{config['_SECRETS_']['password']}"
+!Docker tag pneumonia_rapids_service {copied_image_repo_url}/pneumonia_rapids_service
+!docker push {copied_image_repo_url}/pneumonia_rapids_service
