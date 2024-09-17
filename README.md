@@ -1,3 +1,4 @@
+[![Snowflake - Certified](https://img.shields.io/badge/Snowflake-Certified-2ea44f?style=for-the-badge&logo=snowflake)](https://developers.snowflake.com/solutions/)
 
 # Medical Images Classification using PyTorch in Snowflake
 
