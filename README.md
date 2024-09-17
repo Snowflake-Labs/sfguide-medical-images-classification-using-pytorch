@@ -6,4 +6,4 @@ In this guide, we will leverage the power of Snowflake to tap into unstructured 
 
 
 ## Step-By-Step Guide
-For prerequisites, environment setup, step-by-step guide and instructions, please refer to the [QuickStart Guide](https://quickstarts.snowflake.com/guide/credit-card-fraud-detection-using-snowflake-ml/index.html?index=..%2F..index#0)
+For prerequisites, environment setup, step-by-step guide and instructions, please refer to the [QuickStart Guide](https://quickstarts.snowflake.com/guide/medical_images_classification_using_pytorch/index.html?index=..%2F..index#0)
