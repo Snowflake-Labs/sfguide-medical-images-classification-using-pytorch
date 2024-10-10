@@ -122,7 +122,7 @@ def detect_pneumonia_spcs(session: Session,
     df_pred['url'] = file_list
     
     # Write to Snowflake table
-    session.create_dataframe(df_pred).write.mode("overwrite").save_as_table(model_name + "_metrics")
+    session.create_dataframe(df_pred).write.mode("overwrite").save_as_table(model_name + "_metrics", comment='{"origin":"sf_sit-is", "name":"dicom", "version":{"major":1, "minor":0}, "attributes":{"is_quickstart":1, "source":"streamlit"}}')
 
     return f"Inference completed, check Snowflake table {model_name}_metrics for output"
 
